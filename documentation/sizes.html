@@ -1,0 +1,38 @@
+---
+title: Sizes
+layout: documentation
+description: Sizes of elements
+id: doc-sizes
+---
+
+<section class="section width">
+    <h2 class="section__title">Width & height</h2>
+
+    <div class="section__description">
+        <p class="w-full">To set width, use <span class="class">w-</span> or <span class="class">width-</span> with the
+            value :</p>
+    </div>
+
+    <div class="demos flex-r wrap">
+
+        <table class="w-full">
+            <thead>
+            <tr>
+                <th class="w-half">Class</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for size in site.data.width %}
+            <tr class="w-half">
+                <th>{{ size.class }}</th>
+                <th>{{ size.value }}</th>
+                <th>{{ size.alternative }}</th>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
