@@ -1,0 +1,16 @@
+.navigation
+  &__ul
+    //border: 1px solid blue
+    &_li
+      //border: 1px solid yellow
+      &:first-child
+        margin-bottom: 3rem
+      &:last-child
+        margin-bottom: 0
+      &_a
+        //border: 1px solid red
+        font-size: 1.25rem
+        padding: 1rem
+        &.current, &:hover
+          background-color: $info
+          color: white
