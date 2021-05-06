@@ -1,0 +1,68 @@
+- class: w-0
+  value: 0%
+
+- class: w-5
+  value: 5%
+
+- class: w-10
+  value: 10%
+
+- class: w-15
+  value: 15%
+
+- class: w-20
+  value: 20%
+
+- class: w-25
+  value: 25%
+
+- class: w-30
+  value: 30%
+
+- class: w-33, w-1/3
+  value: 1/3 (33,33333%)
+
+- class: w-35
+  value: 35%
+
+- class: w-40
+  value: 40%
+
+- class: w-45
+  value: 45%
+
+- class: w-50, w-half
+  value: 50%
+
+- class: w-55
+  value: 55%
+
+- class: w-60
+  value: 60%
+
+- class: w-65
+  value: 65%
+
+- class: w-66, w-2/3
+  value: 2/3 (66,6666667%)
+
+- class: w-70
+  value: 70%
+
+- class: w-75
+  value: 75%
+
+- class: w-80
+  value: 80%
+
+- class: w-85
+  value: 85%
+
+- class: w-90
+  value: 90%
+
+- class: w-95
+  value: 95%
+
+- class: w-100, w-full
+  value: 100%
