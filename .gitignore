@@ -1,5 +1,4 @@
 # Jekyll
-
 _site/
 .sass-cache/
 .jekyll-cache/
@@ -9,6 +8,9 @@ _site/
 .idea/
 
 # Node
-
 node_modules/
 package-lock.json
+
+#CSS
+style.css
+style.css.map
