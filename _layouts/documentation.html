@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://source.ploume.io/latest/css/ploume.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="body documentation {{ page.id }}">
+
+<header class="header is-info h-25 p-3-xs flex-c content-centered">
+    <h1 class="bold is-1">{{ page.title }}</h1>
+    <p class="is-5">{{ page.description }}</p>
+</header>
+
+<div class="container flex-r mt-10-xs">
+    <nav class="navigation w-20 mr-3-m">
+        <ul class="navigation__ul w-full flex-c">
+            {% for menu in site.data.menus %}
+            {% assign current = page.url | case | split: '.' %}
+            <li class="navigation__ul_li flex w-full mb-1-xs">
+                <a class="navigation__ul_li_a w-full border-5 is-light {% if current[0] == menu.url %}current{% endif %}" href="{{ menu.url }}">
+                    {{ menu.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <main class="main w-80">
+        {{ content }}
+    </main>
+
+</div>
+
+</body>
+
+</html>
