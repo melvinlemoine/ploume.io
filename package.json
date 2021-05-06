@@ -8,7 +8,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output style.css style.css",
     "build-cleancss": "cleancss -o style.css style.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true sass/melvin-lemoine.sass style.css",
+    "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass style.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   },
